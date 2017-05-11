@@ -208,8 +208,10 @@
         <div id="pkp-container" style="" class="pkp-container_800">
             <h3 class="pkp-title pkp-title_big" data-bind="i18n: 'stPayment.title'">Оплата заказа</h3>
             <!-- ko ifnot: show.showAmount -->
-            <span class="pkp-span" data-bind="i18n: 'stPayment.mess1'">Сумма счета</span>
-            <strong class="pkp-strong"><!-- ko text: formatAmount -->100.00<!-- /ko --> <span data-bind="i18n: currency">руб</span></strong>
+            <div class="invoice-amount">
+                <span class="pkp-span" data-bind="i18n: 'stPayment.mess1'">Сумма счета</span>
+                <strong class="pkp-strong"> <!-- ko text: formatAmount -->1200.00<!-- /ko --> <span data-bind="i18n: currency">руб</span></strong>
+            </div>
             <!-- /ko -->
             <span class="pkp-span" data-bind="i18n: 'stPayment.mess2'">Основание платежа</span>
             <strong class="pkp-strong"><span data-bind="i18n: 'stPayment.mess5'">Оплата</span> «<!-- ko text: title -->Оплата заказа<!-- /ko -->»</strong>
@@ -219,13 +221,19 @@
                 <!-- ko if: show.showCount --><!-- /ko -->
                 <!-- ko if: show.showAmount --><!-- /ko -->
                 <label class="pkp-form__label">
+                    <span class="pkp-span pkp-span_required">Сумма оплаты</span>
+                    <input class="pkp-input j-pkp-req-input" type="text" id="pokupo_amount">
+                </label>
+
+                <label class="pkp-form__label">
                     <span class="pkp-span pkp-span_required" data-bind="i18n: 'stPayment.mess6'">Ваш e-mail</span>
                     <!-- ko if: show.errorEmail --><!-- /ko -->
                     <input class="pkp-input j-pkp-req-input" type="email" data-bind="value: mailUser, attr: {id: cssEmail}" id="pokupo_email">
                 </label>
 
                 <!-- ko if: payments().length > 0 -->
-                    <h3 class="pkp-title" data-bind="i18n: 'stPayment.mess7'">Выберите удобный способ оплаты</h3>
+                    <h3 class="pkp-title" data-bind="i18n: 'stPayment.mess7'">Выберите удобный способ оплаты<span class="payment-list">Показать все методы оплаты</span></h3>
+
 
                     <div class="pkp-payment-method pkp-clearfix">
                         <!-- ko foreach: payments -->

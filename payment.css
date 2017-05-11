@@ -1,0 +1,33 @@
+.invoice-amount {
+  float: left;
+  margin-right: 141px;
+}
+
+#pokupo_amount {
+  margin-right: 14px;
+}
+
+.payment-list {
+  position: relative;
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  padding-top: 9px;
+  color: #177a93;
+  border-bottom: 1px dotted #177a93;
+  cursor: pointer;
+}
+
+.payment-list::before {
+  position: absolute;
+  top: 14px;
+  left: -17px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 7px;
+  background-image: url("images/payment_arrow.png");
+}
