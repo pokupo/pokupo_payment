@@ -1,3 +1,7 @@
+.pkp_html .pkp_body #pkp-container {
+  padding-bottom: 10px;
+}
+
 .invoice-amount {
   float: left;
   margin-right: 141px;
@@ -35,10 +39,26 @@
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
   padding-top: 0;
   min-height: 70px;
+  margin-left: 0!important;
+  margin-right: 16px!important;
+  margin-bottom: 18px!important;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__item:nth-child(3n+3) {
+  margin-right: 0!important;
 }
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__content {
+  height: 68px;
   border-radius: 8px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__content:hover .pkp-payment-method__pay {
+  color: #4fb44f;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__content:hover .pkp-payment-method__pay > span:first-child {
+  color: #000;
 }
 
 .pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
@@ -68,4 +88,41 @@
   display: inline-block;
   font-size: 16px;
   font-weight: 700;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method {
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__image {
+  height: 68px;
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__pay {
+  left: 108px;
+  bottom: 19px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
+  right: -10px;
+  top: -9px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-tooltip__trigger {
+  font-size: 12px;
+  line-height: 16px;
+  border-width: 2px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-btns-holder {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-footer {
+  text-align: left;
 }
