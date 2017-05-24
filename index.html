@@ -241,7 +241,7 @@
                 </label></form>
 
                 <!-- ko if: payments().length > 0 -->
-                    <h3 class="pkp-title" data-bind="i18n: 'stPayment.mess7'">Выберите удобный способ оплаты<span class="payment-list">Показать все методы оплаты</span></h3>
+                    <h3 class="pkp-title" data-bind="i18n: 'stPayment.mess7'">Выберите удобный способ оплаты<span class="payment-list">Показать все методы оплаты</span><span class="payment-list--bg"></span></h3>
 
 
                     <div class="pkp-payment-method pkp-clearfix">
@@ -261,10 +261,11 @@
                             </div>
 
                             <div class="pkp-payment-method__group--search">
-                                <form name="" method="" action="">
-                                    <input type="search" name="">
-                                    <input type="button" name="" value="Поиск">
-                                    <input type="submit" name="" value="">
+                                <button class="pkp-payment-method__search-button">Поиск</button>
+                                <form class="pkp-payment-method__search-form" name="pkp-payment-method__search-form" method="" action="#">
+                                    <input type="search" class="pkp-payment-method__search-field" name="pkp-payment-method__search-field" placeholder="Название банка или оператора">
+                                    <input class="pkp-payment-method__submit-button" type="submit" name="pkp-payment-method__submit-button" value="">
+                                    <input class="pkp-payment-method__close-button" type="button" name="pkp-payment-method__close-button" value="">
                                 </form>
                             </div>
 
