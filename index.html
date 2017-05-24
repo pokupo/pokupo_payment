@@ -238,18 +238,38 @@
                     <span class="pkp-span pkp-span_required" data-bind="i18n: 'stPayment.mess6'">Ваш e-mail</span>
                     <!-- ko if: show.errorEmail --><!-- /ko -->
                     <input class="pkp-input j-pkp-req-input" type="email" data-bind="value: mailUser, attr: {id: cssEmail}" id="pokupo_email">
-                </label>
+                </label></form>
 
                 <!-- ko if: payments().length > 0 -->
                     <h3 class="pkp-title" data-bind="i18n: 'stPayment.mess7'">Выберите удобный способ оплаты<span class="payment-list">Показать все методы оплаты</span></h3>
 
 
                     <div class="pkp-payment-method pkp-clearfix">
+
+                        <div class="pkp-payment-method__group">
+                            <div class="pkp-payment-method__group--item pkp-payment-method__group--popular">
+                                <button>Популярные</button>
+                            </div>
+                            <div class="pkp-payment-method__group--item pkp-payment-method__group--money-transfers">
+                                <button>Денежные переводы</button>
+                            </div>
+                            <div class="pkp-payment-method__group--item pkp-payment-method__group--online-wallets">
+                                <button>Интернет-кошельки</button>
+                            </div>
+                            <div class="pkp-payment-method__group--item pkp-payment-method__group--bank-cards">
+                                <button>Банковские карты</button>
+                            </div>
+
+                            <div class="pkp-payment-method__group--search">
+                                <form name="" method="" action="">
+                                    <input type="search" name="">
+                                    <input type="button" name="" value="Поиск">
+                                    <input type="submit" name="" value="">
+                                </form>
+                            </div>
+
+                        </div>
                         <!-- ko foreach: payments -->
-
-                        
-
-
 
                         <!--  ko template: { name: 'standalonePaymentMethodTmpl' } --><div class="pkp-payment-method__item" data-bind="css: {'full_width': $data.logo_gateway}, click: Click.SelectPayment">
         <!-- ko if: $data.name_payment -->
@@ -267,7 +287,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/yandex.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/yandex.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
@@ -295,7 +315,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/sberbank.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/sberbank.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
@@ -323,7 +343,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/visa.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/visa.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
@@ -351,7 +371,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/svyaznoy.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/svyaznoy.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
@@ -379,7 +399,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/webmoney.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/webmoney.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
@@ -407,7 +427,7 @@
         <div class="pkp-payment-method__content">
             <div class="pkp-payment-method__image">
                 <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
-                <img src="images/logo/euroset.jpg" alt="" data-bind="attr: {src: $data.logo_payment}">
+                <img src="images/logo/euroset.png" alt="" data-bind="attr: {src: $data.logo_payment}">
                 
                 <!-- ko if: $data.logo_gateway --><!-- /ko -->
             </div>
