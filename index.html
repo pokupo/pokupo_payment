@@ -229,10 +229,10 @@
                 <!-- ko if: show.errorBase --><!-- /ko -->
                 <!-- ko if: show.showCount --><!-- /ko -->
                 <!-- ko if: show.showAmount --><!-- /ko -->
-                <!-- <label class="pkp-form__label pkp-form__label--amount">
+                <label class="pkp-form__label pkp-form__label--amount">
                     <span class="pkp-span pkp-span_required">Сумма оплаты</span>
                     <input class="pkp-input j-pkp-req-input" type="text" id="pokupo_amount">
-                </label> -->
+                </label>
 
                 <label class="pkp-form__label pkp-form__label--email">
                     <span class="pkp-span pkp-span_required" data-bind="i18n: 'stPayment.mess6'">Ваш e-mail</span>
@@ -272,7 +272,11 @@
                         </div>
                         <!-- ko foreach: payments -->
 
-                        <!--  ko template: { name: 'standalonePaymentMethodTmpl' } --><div class="pkp-payment-method__item" data-bind="css: {'full_width': $data.logo_gateway}, click: Click.SelectPayment">
+
+                        <div class="pkp-payment-method--group pkp-payment-method--popular">
+                            
+
+                            <!--  ko template: { name: 'standalonePaymentMethodTmpl' } --><div class="pkp-payment-method__item" data-bind="css: {'full_width': $data.logo_gateway}, click: Click.SelectPayment">
         <!-- ko if: $data.name_payment -->
         <div class="pkp-tooltip-payment-method">
             <div class="pkp-tooltip">
@@ -439,6 +443,74 @@
             <button class="pkp-payment-method__pay j-pkp-pay"><span data-bind="i18n: 'stPayment.mess10'">Оплатить</span> <!-- ko text: itog -->1200.00<!-- /ko --> <span data-bind="i18n: currency">руб</span></button>
         </div>
     </div><!-- /ko -->
+
+
+                        </div>
+
+
+
+                        <div class="pkp-payment-method--group pkp-payment-method--money-transfers">
+                            
+
+                            <!--  ko template: { name: 'standalonePaymentMethodTmpl' } --><div class="pkp-payment-method__item" data-bind="css: {'full_width': $data.logo_gateway}, click: Click.SelectPayment">
+        <!-- ko if: $data.name_payment -->
+        <div class="pkp-tooltip-payment-method">
+            <div class="pkp-tooltip">
+                <span class="pkp-tooltip__trigger">?</span>
+
+                <div class="pkp-tooltip__content pkp-tooltip__content_left">
+                    <h6 class="pkp-tooltip__title" data-bind="text: $data.name_payment">Яндекс.Деньги</h6>
+                    <p data-bind="html: $data.desc_payment">Мгновенная оплата с кошелька платежной системы <a href="https://money.yandex.ru" target="_blank">Яндекс.Деньги</a>.<br><span style="color: #FF0000">Внимание!</span> Платежным оператором может взиматься дополнительная комиссия.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+        <div class="pkp-payment-method__content">
+            <div class="pkp-payment-method__image">
+                <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
+                <img src="images/logo/yandex.png" alt="" data-bind="attr: {src: $data.logo_payment}">
+                
+                <!-- ko if: $data.logo_gateway --><!-- /ko -->
+            </div>
+            <div class="pkp-payment-method__info">
+                <!--<span class="pkp-span"><span data-bind="i18n: 'stPayment.mess11'"></span>: <strong>&lt;!&ndash; ko text: $data.time_payment &ndash;&gt;&lt;!&ndash; /ko &ndash;&gt;</strong></span>-->
+                <!--<span class="pkp-span"><span data-bind="i18n: 'stPayment.mess12'"></span>: <strong>&lt;!&ndash; ko text: $data.cost_payment &ndash;&gt;&lt;!&ndash; /ko &ndash;&gt; <span data-bind="i18n: currency"></span></strong></span>-->
+            </div>
+            <button class="pkp-payment-method__pay j-pkp-pay"><span data-bind="i18n: 'stPayment.mess10'">Оплатить</span> <!-- ko text: itog -->1200.00<!-- /ko --> <span data-bind="i18n: currency">руб</span></button>
+        </div>
+    </div><!-- /ko -->
+
+    <!--  ko template: { name: 'standalonePaymentMethodTmpl' } --><div class="pkp-payment-method__item" data-bind="css: {'full_width': $data.logo_gateway}, click: Click.SelectPayment">
+        <!-- ko if: $data.name_payment -->
+        <div class="pkp-tooltip-payment-method">
+            <div class="pkp-tooltip">
+                <span class="pkp-tooltip__trigger">?</span>
+
+                <div class="pkp-tooltip__content pkp-tooltip__content_center">
+                    <h6 class="pkp-tooltip__title" data-bind="text: $data.name_payment">Перевод с карты Сбербанка</h6>
+                    <p data-bind="html: $data.desc_payment">Оплата прямым переводом с карты на карту Сбербанка. <br><span style="color: #FF0000">Внимание!</span> Комиссия Сбербанка оплачивается покупателем.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+        <div class="pkp-payment-method__content">
+            <div class="pkp-payment-method__image">
+                <!-- <img src="//seller.pokupo.ru/images/logos/payment_base/2.png" alt="" data-bind="attr: {src: $data.logo_payment}"> -->
+                <img src="images/logo/sberbank.png" alt="" data-bind="attr: {src: $data.logo_payment}">
+                
+                <!-- ko if: $data.logo_gateway --><!-- /ko -->
+            </div>
+            <div class="pkp-payment-method__info">
+                <!--<span class="pkp-span"><span data-bind="i18n: 'stPayment.mess11'"></span>: <strong>&lt;!&ndash; ko text: $data.time_payment &ndash;&gt;&lt;!&ndash; /ko &ndash;&gt;</strong></span>-->
+                <!--<span class="pkp-span"><span data-bind="i18n: 'stPayment.mess12'"></span>: <strong>&lt;!&ndash; ko text: $data.cost_payment &ndash;&gt;&lt;!&ndash; /ko &ndash;&gt; <span data-bind="i18n: currency"></span></strong></span>-->
+            </div>
+            <button class="pkp-payment-method__pay j-pkp-pay"><span data-bind="i18n: 'stPayment.mess10'">Оплатить</span> <!-- ko text: itog -->1200.00<!-- /ko --> <span data-bind="i18n: currency">руб</span></button>
+        </div>
+    </div><!-- /ko -->
+
+                        </div>
+
+                        
                         
 
                             

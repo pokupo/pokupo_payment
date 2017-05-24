@@ -4,6 +4,7 @@ $(".payment-list").click(function() {
   if ($(".pkp-payment-method__group").hasClass("pkp-payment-method__group--show")) {
     $(".payment-list").text("Скрыть все методы оплаты");
     $(".pkp-payment-method").css("backgroundColor", "#f7f5f3");
+    $(".pkp-payment-method--group").css("backgroundColor", "#f7f5f3");
     $(".pkp-payment-method").css("marginTop", "16px");
     $(".pkp-payment-method").css("marginBottom", "27px");
     $(".pkp-payment-method").css("paddingTop", "12px");
@@ -11,6 +12,7 @@ $(".payment-list").click(function() {
   } else {
     $(".payment-list").text("Показать все методы оплаты");
     $(".pkp-payment-method").css("backgroundColor", "#fff");
+    $(".pkp-payment-method--group").css("backgroundColor", "#fff");
     $(".pkp-payment-method").css("marginTop", 0);
     $(".pkp-payment-method").css("marginBottom", "17px");
     $(".pkp-payment-method").css("paddingTop", "8px");
@@ -74,3 +76,10 @@ $("#pokupo_email").blur(function() {
     $(".pkp-form__label--email").removeClass("pkp-form__label--invalid");
   }
 });
+
+/*$(".pkp-payment-method__group--item").click(function() {
+  for (var i = 0; i < $(".pkp-payment-method__group--item").length; i++) {
+    $(".pkp-payment-method__group--item")[i].hide();
+  }
+  $(this).show();
+});*/

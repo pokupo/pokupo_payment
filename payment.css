@@ -47,7 +47,11 @@
   margin-bottom: 0!important;
 }
 
-.pkp_html .pkp_body #pkp-container .pkp-payment-method__item:nth-child(3n+4) {
+/* .pkp_html .pkp_body #pkp-container .pkp-payment-method__item:nth-child(3n+4) {
+  margin-right: 0!important;
+} */
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+3) {
   margin-right: 0!important;
 }
 
@@ -318,4 +322,12 @@
 
 .pkp_html .pkp_body #pkp-container .pkp-form__label--amount + .pkp-form__label--email input {
   width: 351px;
+}
+
+/* .pkp_html .pkp_body #pkp-container .pkp-payment-method--group {
+  background-color: #f7f5f3;
+} */
+
+.pkp-payment-method--money-transfers {
+  display: none;
 }
