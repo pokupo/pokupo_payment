@@ -294,3 +294,14 @@
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__close-button:focus {
   border: none;
 }
+
+.pkp-form__label--invalid::before {
+  position: absolute;
+  top: 2px;
+  left: 225px;
+  content: "Обязательное поле";
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fd5656;
+}

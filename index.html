@@ -229,12 +229,12 @@
                 <!-- ko if: show.errorBase --><!-- /ko -->
                 <!-- ko if: show.showCount --><!-- /ko -->
                 <!-- ko if: show.showAmount --><!-- /ko -->
-                <label class="pkp-form__label">
+                <label class="pkp-form__label pkp-form__label--amount">
                     <span class="pkp-span pkp-span_required">Сумма оплаты</span>
                     <input class="pkp-input j-pkp-req-input" type="text" id="pokupo_amount">
                 </label>
 
-                <label class="pkp-form__label">
+                <label class="pkp-form__label pkp-form__label--email">
                     <span class="pkp-span pkp-span_required" data-bind="i18n: 'stPayment.mess6'">Ваш e-mail</span>
                     <!-- ko if: show.errorEmail --><!-- /ko -->
                     <input class="pkp-input j-pkp-req-input" type="email" data-bind="value: mailUser, attr: {id: cssEmail}" id="pokupo_email">

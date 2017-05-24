@@ -18,6 +18,7 @@ $(".payment-list").click(function() {
   }
 });
 
+
 $(".pkp-payment-method__search-button").click(function() {
   $(".pkp-payment-method__search-form").toggleClass("pkp-payment-method__search-form--show");
 });
@@ -25,4 +26,51 @@ $(".pkp-payment-method__search-button").click(function() {
 $(".pkp-payment-method__close-button").click(function() {
   $(".pkp-payment-method__search-form").toggleClass("pkp-payment-method__search-form--show");
   $(".pkp-payment-method__search-field").val("");
+});
+
+
+$(".pkp-payment-method__content").click(function() {
+  if ($("#pokupo_amount").val() == "") {
+    $("#pokupo_amount").css("borderColor", "#fd5656");
+    $("#pokupo_amount").css("borderWidth", "2px");
+    $(".pkp-form__label--amount").addClass("pkp-form__label--invalid");
+  } else {
+    $("#pokupo_amount").css("borderColor", "#ccc");
+    $("#pokupo_amount").css("borderWidth", "1px");
+    $(".pkp-form__label--amount").removeClass("pkp-form__label--invalid");
+  }
+
+  if ($("#pokupo_email").val() == "") {
+    $("#pokupo_email").css("borderColor", "#fd5656");
+    $("#pokupo_email").css("borderWidth", "2px");
+    $(".pkp-form__label--email").addClass("pkp-form__label--invalid");
+  } else {
+    $("#pokupo_email").css("borderColor", "#ccc");
+    $("#pokupo_email").css("borderWidth", "1px");
+    $(".pkp-form__label--email").removeClass("pkp-form__label--invalid");
+  }
+});
+
+$("#pokupo_amount").blur(function() {
+  if ($("#pokupo_amount").val() == "") {
+    $("#pokupo_amount").css("borderColor", "#fd5656");
+    $("#pokupo_amount").css("borderWidth", "2px");
+    $(".pkp-form__label--amount").addClass("pkp-form__label--invalid");
+  } else {
+    $("#pokupo_amount").css("borderColor", "#ccc");
+    $("#pokupo_amount").css("borderWidth", "1px");
+    $(".pkp-form__label--amount").removeClass("pkp-form__label--invalid");
+  }
+});
+
+$("#pokupo_email").blur(function() {
+  if ($("#pokupo_email").val() == "") {
+    $("#pokupo_email").css("borderColor", "#fd5656");
+    $("#pokupo_email").css("borderWidth", "2px");
+    $(".pkp-form__label--email").addClass("pkp-form__label--invalid");
+  } else {
+    $("#pokupo_email").css("borderColor", "#ccc");
+    $("#pokupo_email").css("borderWidth", "1px");
+    $(".pkp-form__label--email").removeClass("pkp-form__label--invalid");
+  }
 });
