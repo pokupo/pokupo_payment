@@ -61,9 +61,9 @@
   color: #000;
 }
 
-.pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
+/* .pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
   z-index: 1;
-}
+} */
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__pay {
   left: 100px;
