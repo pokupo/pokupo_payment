@@ -362,17 +362,25 @@
   }
 
   .pkp_html .pkp_body #pkp-container.pkp-container_800 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 3px;
+    padding-right: 27px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 h3, 
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-form, 
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-btns-holder, 
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-footer {
+    padding-left: 27px;
   }
 
   .invoice-amount {
     float: none;
+    padding-left: 27px;
   }
 
   .invoice-amount + span,
   .invoice-amount + span + strong {
-    padding-left: 10px;
+    padding-left: 27px;
   }
 
 
@@ -380,6 +388,41 @@
   .pkp_html .pkp_body #pkp-container .pkp-form__label--amount + .pkp-form__label--email input {
     width: 270px;
   }
+
+  .payment-list {
+    margin-right: 27px;
+  }
+
+  /* .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-payment-method {
+    margin-left: 28px;
+  } */
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
+    margin-left: 41px!important;
+    margin-right: 27px!important;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+3) {
+    margin-right: 27px!important;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(2n+2) {
+    margin-right: 0!important;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--email input {
+    width: 560px;
+  }
+
+  .payment-list--bg {
+    width: 190px;
+  }
+
+  .pkp-payment-method__search-field {
+    display: block;
+    width: 560px;
+  }
+
 
 
 

@@ -3,6 +3,9 @@ $(".payment-list").click(function() {
   $(".payment-list").toggleClass("payment-list--show");
   if ($(".pkp-payment-method__group").hasClass("pkp-payment-method__group--show")) {
     $(".payment-list").text("Скрыть все методы оплаты");
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+      $(".payment-list").text("Скрыть");
+    }
     $(".pkp-payment-method").css("backgroundColor", "#f7f5f3");
     $(".pkp-payment-method--group").css("backgroundColor", "#f7f5f3");
     $(".pkp-payment-method").css("marginTop", "16px");
@@ -11,6 +14,9 @@ $(".payment-list").click(function() {
     $(".payment-list--bg").show();
   } else {
     $(".payment-list").text("Показать все методы оплаты");
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+      $(".payment-list").text("Все методы оплаты");
+    }
     $(".pkp-payment-method").css("backgroundColor", "#fff");
     $(".pkp-payment-method--group").css("backgroundColor", "#fff");
     $(".pkp-payment-method").css("marginTop", 0);
