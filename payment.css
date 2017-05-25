@@ -1,14 +1,31 @@
+.pkp_html .pkp_body #pkp-container.pkp-container_800 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .pkp_html .pkp_body #pkp-container {
-  padding-bottom: 10px;
+  padding-bottom: 3px;
+}
+
+.pkp_html .pkp_body #pkp-container.pkp-container_800 h3,
+.pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-form,
+.pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-btns-holder,
+.pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-footer {
+  padding-left: 10px;
+}
+
+.pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-payment-method {
+  margin-left: 8px;
 }
 
 .invoice-amount {
   float: left;
   margin-right: 141px;
+  padding-left: 10px;
 }
 
 #pokupo_amount {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .payment-list {
@@ -19,7 +36,7 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 15px;
-  margin-right: 10px;
+  margin-right: 20px;
   padding-top: 9px;
   color: #177a93;
   border-bottom: 1px dotted #177a93;
@@ -30,7 +47,7 @@
 .payment-list::before {
   position: absolute;
   top: 14px;
-  left: -17px;
+  left: -19px;
   content: "";
   display: block;
   width: 12px;
@@ -38,11 +55,15 @@
   background-image: url("images/payment_arrow.png");
 }
 
+.pkp_html .pkp_body #pkp-container .pkp-payment-method__image img {
+  left: -10px;
+}
+
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
   padding-top: 0;
   min-height: 70px;
   margin-left: 4px!important;
-  margin-right: 7px!important;
+  margin-right: 15px!important;
   margin-top: 18px!important;
   margin-bottom: 0!important;
 }
@@ -114,12 +135,12 @@
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__pay {
   left: 108px;
-  bottom: 19px;
+  bottom: 18px;
 }
 
 .pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
-  right: -10px;
-  top: -9px;
+  right: -8px;
+  top: -8px;
   border-radius: 50%;
 }
 
@@ -167,7 +188,7 @@
   position: absolute;
   top: -8px;
   right: 0;
-  width: 227px;
+  width: 237px;
   height: 65px;
   background-color: #f7f5f3;
   border-radius: 10px;
@@ -192,9 +213,9 @@
   line-height: 28px;
   font-weight: 700;
   margin-top: 10px;
-  margin-right: 4px;
+  margin-right: 7px;
   margin-bottom: 10px;
-  padding: 0 10px;
+  padding: 0 8px;
   border: 1px solid #d8d8d8;
   background-color: #f7f5f3;
   color: black;
@@ -218,7 +239,7 @@
   font-size: 13px;
   font-weight: 700;
   margin-top: 15px;
-  padding-right: 32px;
+  padding-right: 42px;
   background-color: #f7f5f3;
   border: none;
 }
@@ -226,7 +247,7 @@
 .pkp-payment-method__search-button::before {
   position: absolute;
   top: 0;
-  right: 6px;
+  right: 16px;
   content: "";
   display: block;
   width: 17px;
@@ -246,7 +267,7 @@
 .pkp-payment-method__search-form--show::after {
   position: absolute;
   top: -24px;
-  right: 41px;
+  right: 51px;
   content: "";
   display: block;
   width: 1px;
@@ -257,13 +278,13 @@
 .pkp-payment-method__search-field {
   position: absolute;
   top: -34px;
-  right: 0;
+  right: 8px;
   display: block;
   width: 720px;
   height: 50px;
   font-size: 13px;
   font-weight: 400;
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 80px;
   background-color: white;
   border: 1px solid #ccc;
@@ -274,7 +295,7 @@
 .pkp-payment-method__submit-button {
   position: absolute;
   top: -17px;
-  right: 55px;
+  right: 65px;
   content: "";
   display: block;
   width: 17px;
@@ -286,7 +307,7 @@
 .pkp-payment-method__close-button {
   position: absolute;
   top: -16px;
-  right: 14px;
+  right: 24px;
   content: "";
   display: block;
   width: 12px;
@@ -333,3 +354,5 @@
 .pkp-payment-method--bank-cards {
   display: none;
 }
+
+@media 
