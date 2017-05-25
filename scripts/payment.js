@@ -78,9 +78,10 @@ $("#pokupo_email").blur(function() {
 });
 
 $(".pkp-payment-method__group--item").click(function() {
-  console.log($(".pkp-payment-method__group--item").length);
-  for (var i = 0; i < $(".pkp-payment-method__group--item").length; i++) {
-    $(".pkp-payment-method__group--item")[i].removeClass("pkp-payment-method__group--active");
+  for (var i = 1; i < $(".pkp-payment-method__group--item").length + 1; i++) {
+    $(".pkp-payment-method__group--item-" + i).removeClass("pkp-payment-method__group--active");
+    $(".pkp-payment-method--group-" + i).hide();
   }
   $(this).addClass("pkp-payment-method__group--active");
+  $(".pkp-payment-method--group-" + $(this).attr("class").substr(64, 1)).show();
 });

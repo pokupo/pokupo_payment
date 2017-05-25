@@ -328,6 +328,8 @@
   background-color: #f7f5f3;
 } */
 
-.pkp-payment-method--money-transfers {
+.pkp-payment-method--money-transfers,
+.pkp-payment-method--online-wallets,
+.pkp-payment-method--bank-cards {
   display: none;
 }
