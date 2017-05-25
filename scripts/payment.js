@@ -85,3 +85,24 @@ $(".pkp-payment-method__group--item").click(function() {
   $(this).addClass("pkp-payment-method__group--active");
   $(".pkp-payment-method--group-" + $(this).attr("class").substr(64, 1)).show();
 });
+
+
+$(document).ready(function() {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+    $(".payment-list").text("Все методы оплаты");
+    $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите способ оплаты");
+  } else {
+    $(".payment-list").text("Показать все методы оплаты");
+    $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите удобный способ оплаты");
+  }
+});
+
+$(window).resize(function() {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+    $(".payment-list").text("Все методы оплаты");
+    $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите способ оплаты");
+  } else {
+    $(".payment-list").text("Показать все методы оплаты");
+    $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите удобный способ оплаты");
+  }
+});

@@ -355,4 +355,32 @@
   display: none;
 }
 
-@media 
+@media screen and (max-width: 1023px) {
+
+  .pkp_html .pkp_body #pkp-container {
+    max-width: 640px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .invoice-amount {
+    float: none;
+  }
+
+  .invoice-amount + span,
+  .invoice-amount + span + strong {
+    padding-left: 10px;
+  }
+
+
+  .pkp_html .pkp_body #pkp-container .pkp-input,
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--amount + .pkp-form__label--email input {
+    width: 270px;
+  }
+
+
+
+}
