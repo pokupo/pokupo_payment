@@ -481,7 +481,146 @@
     right: 21px;
   } 
 
+}
 
 
+@media screen and (max-width: 749px) {
+
+  .pkp_html .pkp_body #pkp-container {
+    min-width: auto;
+    max-width: 360px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-input, 
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--amount + .pkp-form__label--email input {
+    width: 300px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-strong {
+    margin-bottom: 17px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .invoice-amount .pkp-strong {
+    margin-bottom: 21px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span,
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span {
+    position: absolute;
+    top: 24px;
+    left: 19px;
+    width: 300px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-form__label {
+    width: 300px;
+    margin-bottom: 22px;
+  }
+
+  .pkp-form__label--invalid::before {
+    top: 26px;
+    right: 14px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--email {
+    margin-bottom: 29px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 h3 {
+    padding-left: 36px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 h3:first-child {
+    padding-left: 27px;
+  }
+
+  .payment-list {
+    float: none;
+    position: absolute;
+    left: calc(50% - 67px);
+    bottom: 172px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-title {
+    position: static;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 {
+    position: relative;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method {
+    margin-top: 1px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
+    width: 221px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
+    margin-left: 54px!important;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
+    top: 58px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content {
+    width: 279px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(odd) .pkp-tooltip__content {
+    left: -233px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(odd) .pkp-tooltip__content:after {
+    left: 233px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method {
+    margin-bottom: 75px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-btns-holder {
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-btns-holder {
+    padding-left: 0;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-footer {
+    width: 195px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-footer {
+    padding-left: 0;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-btn_back {
+    margin-bottom: 44px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-footer .pkp-span {
+    line-height: 16px;
+  }
+
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-span,
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-strong {
+    padding-left: 27px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-form__label--email input {
+    width: 300px;
+  }
 
 }

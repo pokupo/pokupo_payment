@@ -72,6 +72,11 @@ $("#pokupo_amount").blur(function() {
     $("#pokupo_amount").css("borderColor", "#fd5656");
     $("#pokupo_amount").css("borderWidth", "2px");
     $(".pkp-form__label--amount").addClass("pkp-form__label--invalid");
+
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") < "640px") {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span").show();
+    }
+
   } else {
     $("#pokupo_amount").css("borderColor", "#ccc");
     $("#pokupo_amount").css("borderWidth", "1px");
@@ -84,6 +89,11 @@ $("#pokupo_email").blur(function() {
     $("#pokupo_email").css("borderColor", "#fd5656");
     $("#pokupo_email").css("borderWidth", "2px");
     $(".pkp-form__label--email").addClass("pkp-form__label--invalid");
+
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") < "640px") {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span").show();
+    }
+
   } else {
     $("#pokupo_email").css("borderColor", "#ccc");
     $("#pokupo_email").css("borderWidth", "1px");
@@ -106,7 +116,7 @@ $(document).ready(function() {
   $(".pkp_html .pkp_body #pkp-container .pkp-tooltip .pkp-tooltip__content").removeClass("pkp-tooltip__content_center");
   $(".pkp_html .pkp_body #pkp-container .pkp-tooltip .pkp-tooltip__content").removeClass("pkp-tooltip__content_right");
 
-  if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") <= "640px") {
     $(".payment-list").text("Все методы оплаты");
     $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите способ оплаты");
   } else {
@@ -116,7 +126,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") <= "640px") {
     $(".payment-list").text("Все методы оплаты");
     $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите способ оплаты");
   } else {
@@ -136,5 +146,19 @@ $(window).resize(function() {
       $(".payment-list--bg").css("width", "183px");
       $(".payment-list").text("Скрыть");
     }
+  }
+});
+
+$("#pokupo_amount").focus(function() {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") < "640px") {
+    $(".pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span").hide();
+    $(".pkp-form__label--amount").removeClass("pkp-form__label--invalid");
+  }
+});
+
+$("#pokupo_email").focus(function() {
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") < "640px") {
+    $(".pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span").hide();
+    $(".pkp-form__label--email").removeClass("pkp-form__label--invalid");
   }
 });
