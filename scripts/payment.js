@@ -3,14 +3,22 @@ $(".payment-list").click(function() {
   $(".payment-list").toggleClass("payment-list--show");
   if ($(".pkp-payment-method__group").hasClass("pkp-payment-method__group--show")) {
     $(".payment-list").text("Скрыть все методы оплаты");
+    $(".payment-list--bg").css("width", "237px");
     if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
       $(".payment-list").text("Скрыть");
+      $(".payment-list--bg").css("width", "183px");
     }
     $(".pkp-payment-method").css("backgroundColor", "#f7f5f3");
     $(".pkp-payment-method--group").css("backgroundColor", "#f7f5f3");
     $(".pkp-payment-method").css("marginTop", "16px");
     $(".pkp-payment-method").css("marginBottom", "27px");
     $(".pkp-payment-method").css("paddingTop", "12px");
+
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
+      $(".pkp-payment-method").css("paddingTop", "76px");
+      $(".pkp-payment-method").css("marginBottom", "47px");
+    }
+
     $(".payment-list--bg").show();
   } else {
     $(".payment-list").text("Показать все методы оплаты");
@@ -114,5 +122,19 @@ $(window).resize(function() {
   } else {
     $(".payment-list").text("Показать все методы оплаты");
     $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите удобный способ оплаты");
+  }
+
+  if ($(".pkp-payment-method__group").hasClass("pkp-payment-method__group--show")) {
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") != "640px") {
+      $(".pkp-payment-method").css("paddingTop", "12px");
+      $(".pkp-payment-method").css("marginBottom", "27px");
+      $(".payment-list--bg").css("width", "237px");
+      $(".payment-list").text("Скрыть все методы оплаты");
+    } else {
+      $(".pkp-payment-method").css("paddingTop", "76px");
+      $(".pkp-payment-method").css("marginBottom", "47px");
+      $(".payment-list--bg").css("width", "183px");
+      $(".payment-list").text("Скрыть");
+    }
   }
 });

@@ -399,12 +399,8 @@
   }
 
   .payment-list {
-    margin-right: 27px;
+    margin-right: 21px;
   }
-
-  /* .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-payment-method {
-    margin-left: 28px;
-  } */
 
   .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
     margin-left: 41px!important;
@@ -424,29 +420,42 @@
   }
 
   .payment-list--bg {
-    width: 190px;
+    width: 183px;
+  }
+
+  .pkp-payment-method__group--show {
+    margin-left: 20px;
+    margin-bottom: 82px;
+  }
+
+  .pkp-payment-method__group--item button {
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .pkp-payment-method__search-button {
+    display: none;
+  }
+
+  .pkp-payment-method__search-form {
+    display: block;
   }
 
   .pkp-payment-method__search-field {
+    top: -101px;
+    right: 22px;
     display: block;
     width: 560px;
   }
 
-  /* .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(odd) {
-    left: -108px;
+  .pkp-payment-method__submit-button {
+    top: -84px;
+    right: 35px;
   }
-  
-  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(odd):after {
-    left: 108px;
+
+  .pkp-payment-method__close-button {
+    display: none;
   }
-  
-  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(even) {
-    right: -21px;
-  }
-  
-  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(even):after {
-    right: 21px;
-  } */
 
   .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+1) .pkp-tooltip__content {
     left: inherit;
