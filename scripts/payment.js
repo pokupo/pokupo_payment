@@ -140,7 +140,7 @@ $(window).resize(function() {
   }
 
   if ($(".pkp-payment-method__group").hasClass("pkp-payment-method__group--show")) {
-    if ($(".pkp_html .pkp_body #pkp-container").css("width") != "640px") {
+    if ($(".pkp_html .pkp_body #pkp-container").css("width") > "640px") {
       $(".pkp-payment-method").css("paddingTop", "12px");
       $(".pkp-payment-method").css("marginBottom", "27px");
       $(".payment-list--bg").css("width", "237px");
@@ -152,6 +152,26 @@ $(window).resize(function() {
       $(".payment-list").text("Скрыть");
     }
   }
+
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") < "640px") {
+    if ($("#pokupo_amount").val() != "") {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span").hide();
+    } else {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span").show();
+    }
+
+    if ($("#pokupo_email").val() != "") {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span").hide();
+    } else {
+      $(".pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span").show();
+    }
+  }
+
+  if ($(".pkp_html .pkp_body #pkp-container").css("width") >= "640px") {
+    $(".pkp_html .pkp_body #pkp-container .pkp-form__label--amount .pkp-span").show();
+    $(".pkp_html .pkp_body #pkp-container .pkp-form__label--email .pkp-span").show();
+  }
+
 });
 
 $("#pokupo_amount").focus(function() {
