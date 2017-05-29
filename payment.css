@@ -355,6 +355,15 @@
   display: none;
 }
 
+.pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+1) .pkp-tooltip__content {
+  left: -21px;
+}
+
+.pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+1) .pkp-tooltip__content:after {
+  left: 21px;
+} 
+
+
 @media screen and (max-width: 1023px) {
 
   .pkp_html .pkp_body #pkp-container {
@@ -422,6 +431,46 @@
     display: block;
     width: 560px;
   }
+
+  /* .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(odd) {
+    left: -108px;
+  }
+  
+  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(odd):after {
+    left: 108px;
+  }
+  
+  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(even) {
+    right: -21px;
+  }
+  
+  .pkp_html .pkp_body #pkp-container .pkp-tooltip__content:nth-child(even):after {
+    right: 21px;
+  } */
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+1) .pkp-tooltip__content {
+    left: inherit;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+1) .pkp-tooltip__content:after {
+    left: inherit;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(odd) .pkp-tooltip__content {
+    left: -160px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(odd) .pkp-tooltip__content:after {
+    left: 160px;
+  } 
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(even) .pkp-tooltip__content {
+    right: -21px;
+  }
+
+  .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(even) .pkp-tooltip__content:after {
+    right: 21px;
+  } 
 
 
 

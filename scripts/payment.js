@@ -94,6 +94,10 @@ $(".pkp-payment-method__group--item").click(function() {
 
 
 $(document).ready(function() {
+  $(".pkp_html .pkp_body #pkp-container .pkp-tooltip .pkp-tooltip__content").removeClass("pkp-tooltip__content_left");
+  $(".pkp_html .pkp_body #pkp-container .pkp-tooltip .pkp-tooltip__content").removeClass("pkp-tooltip__content_center");
+  $(".pkp_html .pkp_body #pkp-container .pkp-tooltip .pkp-tooltip__content").removeClass("pkp-tooltip__content_right");
+
   if ($(".pkp_html .pkp_body #pkp-container").css("width") == "640px") {
     $(".payment-list").text("Все методы оплаты");
     $(".pkp_html .pkp_body #pkp-container.pkp-container_800 .payment-title").html("Выберите способ оплаты");
