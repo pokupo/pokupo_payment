@@ -69,10 +69,6 @@
   margin-bottom: 0!important;
 }
 
-/* .pkp_html .pkp_body #pkp-container .pkp-payment-method__item:nth-child(3n+4) {
-  margin-right: 0!important;
-} */
-
 .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+3) {
   margin-right: 0!important;
 }
@@ -89,10 +85,6 @@
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__content:hover .pkp-payment-method__pay > span:first-child {
   color: #000;
 }
-
-/* .pkp_html .pkp_body #pkp-container .pkp-tooltip-payment-method {
-  z-index: 1;
-} */
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__pay {
   left: 100px;
@@ -346,10 +338,6 @@
   width: 351px;
 }
 
-/* .pkp_html .pkp_body #pkp-container .pkp-payment-method--group {
-  background-color: #f7f5f3;
-} */
-
 .pkp-payment-method--money-transfers,
 .pkp-payment-method--online-wallets,
 .pkp-payment-method--bank-cards {
@@ -488,7 +476,7 @@
 @media screen and (max-width: 749px) {
 
   .pkp_html .pkp_body #pkp-container {
-    min-width: auto;
+    min-width: 360px;
     max-width: 360px;
   }
 
@@ -533,7 +521,6 @@
   }
 
   .pkp_html .pkp_body #pkp-container.pkp-container_800 h3 {
-    /* padding-left: 36px; */
     text-align: center;
     padding-left: 24px;
   }
@@ -544,20 +531,10 @@
   }
 
   .payment-list {
-    /* float: none;
-    position: absolute;
-    left: calc(50% - 67px);
-    bottom: 172px; */
     float: none;
     margin-right: 28px;
-    /* margin-right: 0;
-    margin-left: 72px; */
     margin-top: 20px;
   }
-
-  /* .pkp_html .pkp_body #pkp-container.pkp-container_800 {
-    position: relative;
-  } */
 
   .pkp_html .pkp_body #pkp-container.pkp-container_800 h3 .payment-title {
     margin-right: 24px;
