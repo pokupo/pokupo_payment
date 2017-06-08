@@ -344,7 +344,9 @@
 
 .pkp-payment-method--money-transfers,
 .pkp-payment-method--online-wallets,
-.pkp-payment-method--bank-cards {
+.pkp-payment-method--bank-cards,
+.pkp-payment-method--online-banks,
+.pkp-payment-method--bank-transfers {
   display: none;
 }
 
