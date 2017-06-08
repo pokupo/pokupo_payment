@@ -69,6 +69,10 @@
   margin-bottom: 0!important;
 }
 
+.pkp_html .pkp_body #pkp-container .pkp-payment-method--group {
+  clear: both;
+}
+
 .pkp_html .pkp_body #pkp-container .pkp-payment-method--group .pkp-payment-method__item:nth-child(3n+3) {
   margin-right: 0!important;
 }
@@ -612,6 +616,8 @@
   .pkp-payment-method__search-field {
     width: 300px;
     padding-right: 45px;
+    top: -175px;
+    right: 31px;
   }
 
   .payment-list--bg {
@@ -624,11 +630,8 @@
     margin-bottom: 79px;
   }
 
-  .pkp-payment-method__search-field {
-    right: 31px;
-  }
-
   .pkp-payment-method__submit-button {
+    top: -158px;
     right: 46px;
   }
 
