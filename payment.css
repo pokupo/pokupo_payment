@@ -1,6 +1,7 @@
 .pkp_html .pkp_body #pkp-container.pkp-container_800 {
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .pkp_html .pkp_body #pkp-container {
@@ -11,6 +12,11 @@
 .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-form,
 .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-btns-holder,
 .pkp_html .pkp_body #pkp-container.pkp-container_800 .pkp-footer {
+  padding-left: 10px;
+}
+
+.pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-span,
+.pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-strong {
   padding-left: 10px;
 }
 
@@ -57,7 +63,9 @@
 }
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__image img {
-  left: -10px;
+  /* left: -10px; */
+  max-width: 100px;
+  max-height: 64px;
 }
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__item {
@@ -79,6 +87,7 @@
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__content {
   height: 68px;
+  text-align: left;
   border-radius: 8px;
 }
 
@@ -387,6 +396,10 @@
     padding-left: 27px;
   }
 
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-span,
+  .pkp_html .pkp_body #pkp-container.pkp-container_800 > .pkp-strong {
+    padding-left: 27px;
+  }
 
   .pkp_html .pkp_body #pkp-container .pkp-input,
   .pkp_html .pkp_body #pkp-container .pkp-form__label--amount + .pkp-form__label--email input {
