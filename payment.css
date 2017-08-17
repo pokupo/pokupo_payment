@@ -109,7 +109,7 @@
 
 .pkp_html .pkp_body #pkp-container .pkp-payment-method__pay {
   left: 100px;
-  bottom: 40px; 
+  /* bottom: 40px;  */
   margin-top: 0;
   width: auto;
   max-width: 100px;
